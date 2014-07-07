@@ -202,7 +202,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     pindexBest->nHeight = nHeight;
 
     BOOST_FOREACH(CTransaction *tx, txFirst)
-        delete tx;
+    delete tx;
 }
 
 BOOST_AUTO_TEST_CASE(sha256transform_equality)
